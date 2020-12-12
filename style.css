@@ -1,0 +1,42 @@
+body {
+  font-family: "YakuHanJP", "Helvetica","NotoSansCJKjp","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "ＭＳ Ｐゴシック", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  width: 100%;
+  background-size: cover;
+}
+
+.header{
+  padding: 30px 40px 30px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nomal{
+  height: 32px;
+  width: 170px;
+}
+
+.header .nav{
+  display: flex;
+  z-index: 5;
+}
+
+.header .nav li{
+  padding: 0 20px 0 20px;
+}
+
+li{
+  list-style: none;
+}
+
+.header .nav a{
+  font-weight: 500;
+  text-decoration: none;
+  color: #45494b;
+}
