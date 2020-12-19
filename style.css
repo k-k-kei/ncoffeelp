@@ -90,7 +90,7 @@ li{
 .text-block p{
   width: 45%;
   margin: 42px 0 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 2;
   letter-spacing: .3px;
@@ -112,6 +112,11 @@ li{
   margin-bottom: 40px;
 }
 
+.line{
+  border-bottom: solid 5px rgba(0,0,0,.7);
+}
+
+
 #home-section-right .image-block{
   position: absolute;
   top:190px;
@@ -122,11 +127,12 @@ li{
 }
 
 .about-pic{
-  height: 520px;
-  width: 650px;
+  height: auto;
+  width: 85%;
   opacity: 0.8;
   box-shadow: 0 8px 8px 0 rgba(0,0,0,.1);
 }
+
 
 #home-section-right .text-block{
   position: absolute;
@@ -152,6 +158,8 @@ li{
   right: 0;
   margin-left: 160px;
   margin-bottom: 60px;
+  width:60%;
+  text-align: right;
 }
 
 #home-section-left .text-block{
@@ -167,4 +175,68 @@ li{
 #home-section-left .text-block p{
   width: 100%;
   font-size: 20px;
+}
+
+#home-section-product{
+  position: relative;
+  height: 850px;
+}
+
+.image-container{
+  height: 800px;
+  margin: 0 50px;
+}
+
+.image-container--items{
+  position: relative;
+  height: 300px;
+  margin-top: 90px;
+}
+
+.product-images{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.product-images li{
+  width: calc(25%);
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.product-images li img{
+  max-width: 100%;
+  height: auto;
+}
+
+.product-images p{
+  padding: 20px 0;
+  text-align: center;
+  color: rgba(0,0,0,.7);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+  border: solid 5px rgba(0,0,0,.7);
+}
+
+.product-explanation p{
+  padding-top: 50px;
+  text-align: left;
+  color: rgba(0,0,0,.7);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+
+.footer{
+  display: flex;
+  background-color: rgba(0,0,0,.7);
+  padding: 20px 20px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer p{
 }
