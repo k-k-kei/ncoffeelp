@@ -7,6 +7,14 @@ body {
   background-size: cover;
 }
 
+.container{
+  width: 100%;
+  position: relative;
+  height: auto;
+  height: 100%;
+  min-height: 100%;
+}
+
 .header{
   padding: 30px 40px 30px 60px;
   width: 100%;
@@ -43,6 +51,7 @@ li{
 .home-main{
   margin-top: -90px;
   padding-top: 90px;
+  padding-bottom: 50px;
 }
 
 .main-inner{
@@ -66,9 +75,6 @@ li{
 }
 
 #home-section-top .text-block{
-  position: absolute;
-  top: 0;
-  left: 0;
   margin-left: 5%;
   z-index: 2;
 }
@@ -81,6 +87,7 @@ li{
 }
 
 .text-block h1{
+  position: relative;
   font-size: 70px;
   line-height: 10rem;
   font-weight: 600;
@@ -88,6 +95,7 @@ li{
 }
 
 .text-block p{
+  position: relative;
   width: 45%;
   margin: 42px 0 0;
   font-size: 18px;
@@ -95,6 +103,36 @@ li{
   line-height: 2;
   letter-spacing: .3px;
   color: rgba(0,0,0,.7);
+}
+
+#home-section-top .btn-block{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;
+}
+
+.btn{
+  display: block;
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 100px;
+  background-color: #41c9b4;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 300ms;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.second-btn{
+  background-color: #f89174;
 }
 
 #home-section-right{
@@ -177,19 +215,12 @@ li{
   font-size: 20px;
 }
 
-#home-section-product{
-  position: relative;
-  height: 850px;
-}
-
 .image-container{
-  height: 800px;
   margin: 0 50px;
 }
 
 .image-container--items{
   position: relative;
-  height: 300px;
   margin-top: 90px;
 }
 
@@ -221,7 +252,7 @@ li{
 }
 
 .product-explanation p{
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: left;
   color: rgba(0,0,0,.7);
   font-size: 20px;
@@ -230,13 +261,296 @@ li{
   line-height: 2;
 }
 
-.footer{
+#home-section-product .btn-block{
+  width: 100%;
   display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#footer p{
+  text-align: center;
   background-color: rgba(0,0,0,.7);
   padding: 20px 20px;
   font-size: 12px;
   color: #ffffff;
 }
 
-.footer p{
+
+@media screen and (max-width: 480px) {
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic Pro", "YakuHanJP", "Helvetica","NotoSansCJKjp","ヒラギノ角ゴ Pro W3", "Meiryo UI", "ＭＳ Ｐゴシック", sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1em;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .header{
+    padding: 15px 20px 15px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .nomal{
+    height: auto;
+    width: 170px;
+  }
+  
+  .header .nav{
+    display: none;
+  }
+  
+  .header .nav li{
+    padding: 0 20px 0 20px;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  .header .nav a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #45494b;
+  }
+  
+  .home-main{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .main-inner{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #home-section-top{
+    position: relative;
+    height: 700px;
+    margin-top: 0px;
+  }
+  
+.main-contents{
+  margin: 0 10px;
+}
+
+  #home-section-top .image-block{
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #home-section-top .text-block{
+    position: relative;
+    margin-left: 0%;
+  }
+  
+  .show{
+    height: auto;
+    width: 100%;
+    opacity: 0.8;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,.1);
+  }
+  
+  .text-block h1{
+    font-size: 35px;
+    line-height: 5rem;
+    font-weight: 600;
+    text-shadow: 0px 2px 1px #45494b;
+    margin-left: 5%;
+    box-sizing: border-box;
+  }
+  
+  .text-block p{
+    width: 90%;
+    margin: 20px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,.7);
+    margin-left: 5%;
+    box-sizing: border-box;
+  }
+  
+  #home-section-top .btn-block{
+    width: 100%;
+    justify-content: center;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 100px;
+    background-color: #41c9b4;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 300ms;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  
+  .second-btn{
+    background-color: #f89174;
+  }
+  
+  #home-section-right{
+    position: relative;
+    height: 600px;
+  }
+  
+  .section-title{
+    margin: 0 0 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0,0,0,.7);
+    margin-bottom: 40px;
+  }
+  
+  .line{
+    border-bottom: solid 5px rgba(0,0,0,.7);
+  }
+  
+  
+  #home-section-right .image-block{
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .about-pic{
+    height: auto;
+    width: 100%;
+    opacity: 0.8;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,.1);
+  }
+  
+  
+  #home-section-right .text-block{
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  #home-section-right .text-block p{
+    width: 90%;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  #home-section-left{
+    position: relative;
+    height: 850px;
+  }
+  
+  #home-section-left .image-block{
+    position: relative;
+    top: 0px;
+    right: 0;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    width:100%;
+    text-align: right;
+  }
+  
+  #home-section-left .text-block{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-right: 0%;
+    z-index: 2;
+    font-size: ;
+  }
+  
+  #home-section-left .text-block p{
+    width: 90%;
+    font-size: 15px;
+  }
+  
+  .image-container{
+    margin: 0 10px;
+  }
+  
+  .image-container--items{
+    position: relative;
+    display: block;
+    margin-top: 90px;
+  }
+  
+  .product-images{
+    display: block;
+    flex-wrap:wrap;
+  }
+  
+  .product-images li{
+    width: calc(100%);
+    padding: 0 0 15px 0;
+    box-sizing: border-box;
+  }
+  
+  .product-images li img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-images p{
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(0,0,0,.7);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 2;
+    border: solid 5px rgba(0,0,0,.7);
+  }
+  
+  .product-explanation p{
+    padding-top: 0px;
+    text-align: left;
+    color: rgba(0,0,0,.7);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 2;
+  }
+  
+  #home-section-product .btn-block{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #footer p{
+    text-align: center;
+    background-color: rgba(0,0,0,.7);
+    padding: 20px 20px;
+    font-size: 12px;
+    color: #ffffff;
+  }
 }
